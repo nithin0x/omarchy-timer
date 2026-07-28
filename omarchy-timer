@@ -4,7 +4,7 @@
 # omarchy:args=[DURATION[/BREAK[/CYCLES]]] | cancel | status | pause | resume | toggle-pause | install | uninstall | waybar-indicator
 # omarchy:examples=omarchy-timer 10m | omarchy-timer 25m/5m/4 | omarchy-timer toggle-pause
 
-ACTIVE_TIMER_FILE="${XDG_RUNTIME_DIR:-/tmp}/omarchy-active-timer"
+ACTIVE_TIMER_FILE="${XDG_RUNTIME_DIR:-/tmp}/omarchy-active-timer.${UID}"
 SOUND_FILE="/usr/share/sounds/freedesktop/stereo/complete.oga"
 
 show_usage() {
